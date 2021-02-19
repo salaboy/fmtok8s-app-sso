@@ -1,0 +1,31 @@
+apiVersion: v2
+description: A Helm chart for a Conference Platform App
+name: fmtok8s-app-keycloak
+version: 0.0.1-SNAPSHOT
+type: application
+icon: https://rawgit.com/jenkins-x/jenkins-x-platform/08df980/images/kubernetes.png
+appVersion: 1.0.0
+maintainers: 
+  - name: salaboy
+    email: salaboy@gmail.com
+    url: http://salaboy.com
+home: http://github.com/salaboy/from-monolith-to-k8s    
+keywords:
+  - cloudnative
+  - example
+  - cd
+  - kubernetes
+  - tutorial
+dependencies:
+- name: fmtok8s-api-gateway
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.161
+- name: fmtok8s-agenda-rest
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.11
+- name: fmtok8s-c4p-rest
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.18
+- name: fmtok8s-email-rest
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.11
