@@ -1,4 +1,4 @@
-# fmtok8s-app-sso:wq
+# Fmtok8s App with SSO
 From Monolith to K8s :: Application Parent Helm Chart 
 
 This version can be configured to work with Knative Services by using the following install command which overrides the values.yaml file:
@@ -26,4 +26,4 @@ EOF
 
 For more information check: https://github.com/salaboy/from-monolith-to-k8s
 
-touch
+
