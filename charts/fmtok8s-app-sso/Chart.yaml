@@ -1,6 +1,6 @@
 apiVersion: v2
 description: A Helm chart for a Conference Platform App
-name: fmtok8s-app-keycloak
+name: fmtok8s-app-sso
 version: 0.0.1-SNAPSHOT
 type: application
 icon: https://rawgit.com/jenkins-x/jenkins-x-platform/08df980/images/kubernetes.png
@@ -19,13 +19,13 @@ keywords:
 dependencies:
 - name: fmtok8s-api-gateway
   repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.161
+  version: 0.0.173
 - name: fmtok8s-agenda-rest
   repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.11
+  version: 0.0.13
 - name: fmtok8s-c4p-rest
   repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.18
+  version: 0.0.20
 - name: fmtok8s-email-rest
   repository: http://jenkins-x-chartmuseum:8080
-  version: 0.0.11
+  version: 0.0.12

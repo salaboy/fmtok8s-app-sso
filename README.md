@@ -1,10 +1,10 @@
-# fmtok8s-app-keycloak
+# fmtok8s-app-sso:wq
 From Monolith to K8s :: Application Parent Helm Chart 
 
 This version can be configured to work with Knative Services by using the following install command which overrides the values.yaml file:
 
 ```
-cat <<EOF | h install fmtok8s workshop/fmtok8s-app-keycloak --values=-
+cat <<EOF | h install fmtok8s workshop/fmtok8s-app-sso --values=-
 fmtok8s-api-gateway:
   knativeDeploy: true
   env:
