@@ -14,7 +14,8 @@ spec:
             name: keycloak
             port: 
               number: 80
-         path: /     
+         path: / 
+         pathType: ImplementationSpecific
   - host: localhost
     http:
       paths:
